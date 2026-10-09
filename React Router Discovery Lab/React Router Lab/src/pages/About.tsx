@@ -1,9 +1,10 @@
-// Part 1: a simple static page at "/about"
 function About() {
   return (
     <main>
       <h1>About</h1>
-      {/* TODO: what this app is, who built it, what API it uses */}
+      <p>This is a simple Pokemon app that displays a list of Pokemon.</p>
+      <p>It was built with React and React Router.</p>
+      <p>It uses the PokeAPI to fetch Pokemon data.</p>
     </main>
   )
 }
