@@ -20,9 +20,27 @@
 // 6. Add a <Link to="/pokemon"> back to the list
 
 import {useParams, Link} from 'react-router-dom'
+import {useEffect, useState} from 'react'
+
+type Status = 'loading' | 'success' | 'not-found' | 'error'
+type pokemon = {
+  name: string
+  id: number
+  sprites: {
+    front_default: string
+  }
+  types: {type: {name: string}}[]
+  height: number
+  weight: number
+}
 
 function PokemonDetail() {
   const {name} = useParams<{name: string}>()
+  const [status, setStatus] = useState<Status>('loading')
+  const [pokemon, setPokemon] = useState<pokemon | null>(null)
+
+  
+  
 
   return (
     <main>
