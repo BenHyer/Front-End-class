@@ -9,3 +9,10 @@ export type Employee = {
   role: string
   department: string
 }
+
+export async function fetchEmployees() : Promise<Employee[]>{
+  const res = await fetch('http://localhost:3001/employees')
+  if (!res.ok) throw new Error(`Request failed: $res.status`)
+  return res.json()
+
+}
