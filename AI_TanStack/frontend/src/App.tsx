@@ -11,6 +11,7 @@ export default function App() {
   const { data, isPending, isError } = useQuery({
   queryKey: ['employees'],
   queryFn: fetchEmployees,
+  staleTime: 30_000
 })
 if (isPending) return <p>Loading…</p>
 
@@ -20,9 +21,9 @@ if (isError) return <p>Could not load employees</p>
     <main>
       <h1>Employee Manager</h1>
       <ul>
-        {data.map((data))=> (
-          <li key={.id} > {PromiseRejectionEvent.title})</li>
-        )}
+        {data.map((employee) => (
+          <li key={employee.id} > {employee.name}</li>
+        ))}
       </ul>
     
     </main>
