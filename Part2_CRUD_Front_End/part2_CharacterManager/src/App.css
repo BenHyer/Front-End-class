@@ -1,0 +1,42 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+}
+
+.error {
+  color: #b00020;
+  background: #fde7ea;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.character-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 320px;
+  margin-bottom: 2rem;
+}
+
+.character-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.character-card button {
+  margin-right: 0.5rem;
+}
