@@ -25,3 +25,30 @@ export async function fetchEmployee(id: string): Promise<Employee>
   if (!emp.ok) throw new Error(`Request failed: ${emp.status}`)
   return emp.json()
 }
+
+export async function createEmployee(employee: Omit<Employee, 'id'>): Promise<Employee> {
+  const res = await fetch('http://localhost:3001/employees', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(employee),
+  })
+  if (!res.ok) throw new Error(`Request failed: ${res.status}`)
+  return res.json()
+}
+
+export async function deleteEmployee(id: string): Promise<void> {
+  const res = await fetch(`http://localhost:3001/employees/${id}`, {
+    method: 'DELETE',
+  })
+  if (!res.ok) throw new Error(`Request failed: ${res.status}`)
+}
+
+export async function updateEmployee(employee: Employee): Promise<Employee> {
+  const res = await fetch(`http://localhost:3001/employees/${employee.id}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(employee),
+  })
+  if (!res.ok) throw new Error(`Request failed: ${res.status}`)
+  return res.json()
+}

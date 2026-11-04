@@ -19,16 +19,17 @@
       "department": "Operations"
     },
     {
-      "id": "4",
-      "name": "Taylor Brooks",
-      "role": "QA Engineer",
-      "department": "Engineering"
-    },
-    {
       "id": "5",
       "name": "Casey Chen",
       "role": "Project Manager",
       "department": "Product"
+    },
+    {
+      "id": "BWGoLxHpY1s",
+      "name": "derek",
+      "role": "coach",
+      "department": "football"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
