@@ -4,8 +4,8 @@ import CharacterCard from "./CharacterCard";
 
 interface CharacterListProps {
   characters: Character[];
-  onEdit: (character: Character) => void;
-  onDelete: (id: string) => void;
+  onEdit?: (character: Character) => void;
+  onDelete?: (id: string) => void;
 }   
 
 function CharacterList({ characters, onEdit, onDelete }: CharacterListProps) {
