@@ -3,4 +3,10 @@
 @theme {
   --font-sans: "Inter", sans-serif;
   --color-brand: #234E70;
+  --color-navy: #17263D;
+  --color-navy-light: #29435D;
+  --color-teal: #168D7D;
+  --color-teal-light: #36B6A0;
+  --color-page: #F5F7FB;
+  --color-line: #EBEFF3;
 }

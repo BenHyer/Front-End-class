@@ -2,13 +2,14 @@
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant: "primary" | "secondary"
+  variant: "primary" | "secondary" | "teal"
   className?: string;
 };
 
 const variantClasses = {
   primary: "bg-brand text-white",
   secondary: "bg-white border border-slate-300 text-slate-700",
+  teal: "bg-teal text-white",
 };
 
 function Button({ children, className = "", variant }: ButtonProps) {
