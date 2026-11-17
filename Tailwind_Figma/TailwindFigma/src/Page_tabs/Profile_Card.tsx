@@ -10,12 +10,12 @@ export default function ProfileCard() {
         
         <div className="flex items-center gap-6">
           <Avatar
-            initials="AJ"
+            initials="PP"
             className="size-18 bg-blue-100 text-brand text-[22px]"
           />
           <div>
-            <h2 className="text-2xl font-bold text-slate-900">Alex Johnson</h2>
-            <p className="text-base text-slate-500 mt-1">Frontend Developer</p>
+            <h2 className="text-2xl font-bold text-slate-900">Peter Parker</h2>
+            <p className="text-base text-slate-500 mt-1">Web-Slinging Vigilante</p>
           </div>
         </div>
 

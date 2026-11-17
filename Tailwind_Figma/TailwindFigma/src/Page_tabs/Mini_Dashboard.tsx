@@ -21,7 +21,7 @@ function MiniDashboard() {
       <header className="flex justify-between items-start">
         <div>
           <h1 className="text-4xl font-bold text-slate-900">Dashboard</h1>
-          <p className="text-lg text-slate-500 mt-1">Welcome back, John!</p>
+          <p className="text-lg text-slate-500 mt-1">Welcome back, Peter!</p>
         </div>
         <Button variant="primary">+ New Project</Button>
       </header>
